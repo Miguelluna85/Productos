@@ -1,0 +1,4 @@
+﻿Paquetes requeridos:
+
+Microsoft.EntityFrameworkCore.SqlServer
+Microsoft.EntityFrameworkCore.tools
