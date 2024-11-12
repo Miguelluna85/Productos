@@ -49,7 +49,7 @@ public class ProductosController : ControllerBase
     {
         try
         {
-            var productos = await _context.Productos.ToListAsync();
+            List<Producto> productos = await _context.Productos.ToListAsync();
 
             return Ok(productos);
         }
@@ -92,7 +92,7 @@ public class ProductosController : ControllerBase
             if (id <= 0 || producto == null)
                 return BadRequest();
 
-            var productoExistente = await _context.Productos.FindAsync(id);
+            Producto productoExistente = await _context.Productos.FindAsync(id);
 
             if (productoExistente == null)
                 return NotFound();
@@ -121,7 +121,7 @@ public class ProductosController : ControllerBase
             if (id <= 0)
                 return BadRequest();
 
-            var productoBorrado = await _context.Productos.FindAsync(id);
+            Producto productoBorrado = await _context.Productos.FindAsync(id);
 
             if (productoBorrado == null)
                 return NotFound();

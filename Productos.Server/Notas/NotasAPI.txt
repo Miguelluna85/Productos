@@ -2,3 +2,7 @@
 
 Microsoft.EntityFrameworkCore.SqlServer
 Microsoft.EntityFrameworkCore.tools
+
+
+Cliente
+Newtonsoft.Json;
